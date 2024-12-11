@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from "./components/Hero.jsx";
 
 const App = () => {
     return (
-        <h1 className="text-3xl text-violet-300 font-bold"> Welcome to this Gaming Website</h1>
+        <main>
+            <Hero />
+        </main>
     )
 }
 export default App
