@@ -1,10 +1,43 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, {useRef, useState} from 'react'
 import {TiLocationArrow} from "react-icons/ti";
 
+// eslint-disable-next-line react/prop-types
 const BentoTilt = ({children, className = ''}) => {
+    const [transformStyle, setTransformStyle] = useState('')
+
+    const itemRef = useRef(null)
+    // Mouse event to card hovering
+    const handleMouseMove = (event) => {
+        if (!itemRef.current) return;
+
+        const { left, top, width, height } =
+            itemRef.current.getBoundingClientRect();
+
+        // tilt corner reaction mythology
+        const relativeX = (event.clientX - left) / width;
+        const relativeY = (event.clientY - top) / height;
+        // tilt corner reaction gages
+        const tiltX = (relativeY - 0.5) * 5;
+        const tiltY = (relativeX - 0.5) * -5;
+
+        //tilt moving scale handler
+        const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(.95, .95, .95)`;
+        setTransformStyle(newTransform);
+    };
+    // Mouse event to cursor move without card
+    const handleMouseLeave = () => {
+        setTransformStyle('')
+    }
+
     return (
-        <div className={className}>
+        <div
+            className={className}
+            ref={itemRef}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+            style={{transform: transformStyle}}
+        >
             {children}
         </div>
     )
