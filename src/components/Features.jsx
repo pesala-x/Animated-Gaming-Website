@@ -1,4 +1,28 @@
 import React from 'react'
+//  reusable BentoCards
+const BentoCard = ({src,title,description}) => {
+  return(
+      <div className='relative size-full '>
+          <video
+            src={src}
+            loop
+            autoPlay
+            muted
+            className="absolute left-0 top-0 size-full object-cover object-center"
+          />
+          <div className='relative z-10 flex size-full flex-col justify-between p-5 text-blue-50'>
+              <div>
+                  <h1 className='bento-title special-font'>
+                      {title}
+                  </h1>
+                  {description && (
+                      <p className='mt-3 max-w-64 text-xs md:text-base'>{description}</p>
+                  )}
+              </div>
+          </div>
+      </div>
+  )
+}
 
 const Features = () => {
     return (
@@ -12,7 +36,15 @@ const Features = () => {
                         on your world.
                     </p>
                     <div className='border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]'>
-
+                        <BentoCard
+                            src="videos/feature-1.mp4"
+                            title={
+                                <>
+                                    radia<b>n</b>t
+                                </>
+                            }
+                            description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+                        />
                     </div>
                 </div>
             </div>
