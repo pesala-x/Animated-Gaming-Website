@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 
 // eslint-disable-next-line react/prop-types
-const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
+const Button = ({ id, title, rightIcon, leftIcon, containerClass, href }) => {
     const buttonRef = useRef(null);
     const frameRef = useRef(null);
 
@@ -49,9 +49,10 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
     }, []);
 
     return (
-        <div
-            ref={frameRef}
+        <a
+            href={href} // Add link here
             className="inline-block perspective-wrapper"
+            ref={frameRef}
             style={{
                 clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", // Default rectangle shape
             }}
@@ -63,11 +64,11 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
             >
                 {leftIcon}
                 <span className="button-text relative inline-flex overflow-hidden font-general text-xs uppercase">
-          <div>{title}</div>
-        </span>
+                    <div>{title}</div>
+                </span>
                 {rightIcon}
             </button>
-        </div>
+        </a>
     );
 };
 
