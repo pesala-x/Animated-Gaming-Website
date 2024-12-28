@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from "./Button.jsx";
+import AnimatedTitle from "./AnimatedTitle.jsx";
 
 // eslint-disable-next-line react/prop-types
 const ImageClipBox = ({src, clipClass}) => (
@@ -43,10 +44,10 @@ const Contact = () => {
                         Join With Legends
                     </p>
 
-                    <p className='special-font mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem]'>
-                        let&#39;s b<b>u</b>ild the <br /> new era of <br /> g<b>a</b>ming t<b>o</b>gether.
-                    </p>
-
+                    <AnimatedTitle
+                        title='let&#39;s b<b>u</b>ild the <br/> new era of <br/> g<b>a</b>ming t<b>o</b>gether.'
+                        containerClass='special-font mt-10 w-full font-zentry text-5xl leading-[0.9] md:text-[6rem]'
+                    />
                     <Button
                         title='Contact Us'
                         containerClass='mt-10 cursor-pointer'
