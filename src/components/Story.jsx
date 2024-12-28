@@ -1,6 +1,7 @@
 import gsap from "gsap";
 import {useRef} from "react";
 import AnimatedTitle from "./AnimatedTitle.jsx";
+import RoundedCorners from "./RoundedCorners.jsx";
 
 const Story = () => {
     const frameRef = useRef(null);
@@ -54,7 +55,7 @@ const Story = () => {
                 {/*Animated title*/}
                 <div className="relative size-full">
                     <AnimatedTitle
-                        title='the st<b>o</b>ry of <br/> a hidden W<b>o</b>rld'
+                        title='the st<b>o</b>ry of <br/> T<b>h</b>e hidden W<b>o</b>rld'
                         sectionId='#story'
                         containerClass='mt-5 pointer-events-none mix-blend-difference relative z-10 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]'
                     />
@@ -74,6 +75,7 @@ const Story = () => {
                                 />
                             </div>
                         </div>
+                        <RoundedCorners />
                     </div>
                 </div>
             </div>
