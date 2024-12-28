@@ -7,39 +7,28 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
     const buttonRef = useRef(null);
     const frameRef = useRef(null);
 
-    const handleMouseMove = (e) => {
-        const { clientX, clientY } = e;
+    const handleMouseMove = () => {
         const element = frameRef.current;
 
         if (!element) return;
 
-        const rect = element.getBoundingClientRect();
-        const xPos = clientX - rect.left;
-        const yPos = clientY - rect.top;
-
-        const centerX = rect.width / 5;
-        const centerY = rect.height / 5;
-
-        const rotateX = ((yPos - centerY) / centerY) * -10;
-        const rotateY = ((xPos - centerX) / centerX) * 10;
-
+        // Animate the button to a polygon shape on hover
         gsap.to(element, {
             duration: 0.5,
-            rotateX,
-            rotateY,
-            transformPerspective: 500,
+            clipPath: "polygon(4% 11%, 86% 22%, 96% 93%, 18% 87%)",
             ease: "power1.inOut",
         });
     };
 
     const handleMouseLeave = () => {
         const element = frameRef.current;
+
         if (element) {
+            // Revert to the original rectangle shape
             gsap.to(element, {
                 duration: 0.5,
-                rotateX: 0,
-                rotateY: 0,
-                ease: "power3.out",
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+                ease: "power1.out",
             });
         }
     };
@@ -60,7 +49,13 @@ const Button = ({ id, title, rightIcon, leftIcon, containerClass }) => {
     }, []);
 
     return (
-        <div ref={frameRef} className="inline-block perspective-wrapper">
+        <div
+            ref={frameRef}
+            className="inline-block perspective-wrapper"
+            style={{
+                clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", // Default rectangle shape
+            }}
+        >
             <button
                 id={id}
                 ref={buttonRef}
