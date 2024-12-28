@@ -1,6 +1,8 @@
-# League of Legends - Animated Gaming Website
+# League of Legends - Animated Gaming Website 
 
 Welcome to the **League of Legends Site** This is a futuristic, dynamic, and visually stunning animated website that brings the thrilling world of gaming to life using cutting-edge web technologies.
+
+<img src="./public/img/logo_icon_2.png" width="" height="200" />
 
 ## 🚀 Technologies Used
 
