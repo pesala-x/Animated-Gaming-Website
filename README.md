@@ -22,7 +22,7 @@ Welcome to the **League of Legends Site** This is a futuristic, dynamic, and vis
 
 ## 📸 Screenshots
 
-![Hero Section](./img.png)
+![Hero Section](./public/img/img.png)
 *The immersive Hero Section of the League of Legends site.*
 
 ## 🛠️ Installation
