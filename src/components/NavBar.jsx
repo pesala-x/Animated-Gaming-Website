@@ -100,7 +100,7 @@ const NavBar = () => {
                             <audio
                                 ref={audioElementRef}
                                 className="hidden"
-                                src="/audio/loop2.mp3"
+                                src="/audio/loop3.mp3"
                                 loop
                             />
                             {/*audio indicator bar declare with array 6 bars*/}

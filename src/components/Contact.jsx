@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react'
 import Button from "./Button.jsx";
 import AnimatedTitle from "./AnimatedTitle.jsx";
