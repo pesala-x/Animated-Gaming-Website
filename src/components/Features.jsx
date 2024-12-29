@@ -1,6 +1,7 @@
 import { useState, useRef } from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
+// eslint-disable-next-line react/prop-types
 export const BentoTilt = ({ children, className = "" }) => {
     const [transformStyle, setTransformStyle] = useState("");
     const itemRef = useRef(null);
@@ -41,6 +42,7 @@ export const BentoTilt = ({ children, className = "" }) => {
 };
 
 //  reusable BentoCards
+// eslint-disable-next-line react/prop-types
 export const BentoCard = ({ src, title, description, isComingSoon }) => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
     const [hoverOpacity, setHoverOpacity] = useState(0);
@@ -181,7 +183,7 @@ const Features = () => (
                 {/*Bento card video*/}
                 <BentoTilt className="bento-tilt_2">
                     <video
-                        src="videos/hero-5.mp4"
+                        src="/videos/feature-5.mp4"
                         loop
                         muted
                         autoPlay
