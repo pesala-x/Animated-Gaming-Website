@@ -5,7 +5,7 @@ import {useWindowScroll} from "react-use";
 import gsap from "gsap";
 
 // Nav right array values
-const navItems = ['Nexus', 'Vault', 'Prologue', 'About', 'Contact' ];
+const navItems = ['Roit Games', 'Universe', 'News', 'About', 'Contact' ];
 
 const NavBar = () => {
     const [isAudioPlaying, setIsAudioPlaying] = useState(false)
@@ -66,13 +66,13 @@ const NavBar = () => {
                 {/*LeftSide of the navBar logo and Product button*/}
                     <div className='flex items-center gap-7'>
                         <img
-                            src='/img/logo.png'
+                            src='/img/logo_icon_2.png'
                             alt='logo'
-                            className='w-10'
+                            className='w-24'
                         />
                         <Button
                             id='product-button'
-                            title='Products'
+                            title='Discover'
                             rightIcon={<TiLocationArrow/>}
                             containerClass='bg-blue-50 md:flex hidden items-center justify-center gap-1'
                         />

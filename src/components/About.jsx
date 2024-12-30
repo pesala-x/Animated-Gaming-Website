@@ -31,21 +31,22 @@ const About = () => {
                 {/*about description*/}
                 <AnimatedTitle
                     title='Disc<b>o</b>ver the world&#39;s <br/> largest shared <b>a</b>dventure'
-                    containerClass='mt-5 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]'
+                    containerClass='mt-2 text-center text-4xl uppercase leading-[0.8] md:text-[6rem]'
                 />
 
                 {/*game paragraphs*/}
                 <div className='about-subtext'>
-                    <p>The Game of Games begins-your life, now an epic MMORPG</p>
-                    <p className='text-gray-500'>Zentry unites every player from countless games and platforms, both
-                        digital and physical, into a unified Play Economy</p>
+                    <p>The ultimate Game of Games begins.</p>
+                    <p className='text-gray-500'>
+                        Riot Games brings champions from every corner of the gaming universe together, bridging worlds across digital and physical realms to create a seamless Play Ecosystem where every player thrives.
+                    </p>
                 </div>
             </div>
             {/*clip*/}
             <div className='h-dvh w-screen' id='clip'>
                 <div className='mask-clip-path about-image '>
                     <img
-                        src='/img/about.webp'
+                        src='/img/about-2.jpg'
                         alt='background'
                         className='absolute left-0 top-0 size-full object-cover'
                     />

@@ -129,13 +129,13 @@ const Hero = () => {
                 </div>
 
                 <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-                    G<b>A</b>MING
+                    Aw<b>a</b>ken
                 </h1>
 
                 <div className='absolute left-0 top-0 z-40 size-full'>
                     <div className='mt-24 px-5 sm:px-10 '>
                         <h1 className="special-font hero-heading text-blue-100">
-                            redefi<b>n</b>e
+                            Le<b>g</b>e<b>n</b>ds
                         </h1>
 
                         <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
@@ -149,7 +149,7 @@ const Hero = () => {
                             id="watch-trailer"
                             title="Watch trailer"
                             leftIcon={<TiLocationArrow/>}
-                            href=''
+                            href='https://www.youtube.com/watch?v=TFzkbos0oeo'
                             containerClass="!bg-yellow-300 flex-center gap-1"
                         />
                     </div>
@@ -157,7 +157,7 @@ const Hero = () => {
             </div>
 
             <h1 className="special-font hero-heading absolute bottom-5 right-5 text-black">
-                G<b>A</b>MING
+                Aw<b>a</b>ken
             </h1>
         </div>
     )
