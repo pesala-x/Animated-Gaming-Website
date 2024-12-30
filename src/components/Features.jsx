@@ -122,10 +122,10 @@ const Features = () => (
                     src="videos/feature-1.mp4"
                     title={
                         <>
-                            radia<b>n</b>t
-                        </>
+                            p<b>a</b>tch <b>n</b>otes
+                            </>
                     }
-                    description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+                    description="New patch, new you? How about a new way of life?! David, John, and Ke show you the journey to YORDLE UP your life with patch 6.0! Coming to you on January 9th UTC."
                     isComingSoon
                 />
             </BentoTilt>
@@ -136,10 +136,10 @@ const Features = () => (
                         src="videos/feature-2.mp4"
                         title={
                             <>
-                                zig<b>m</b>a
+                                A<b>m</b>bessa Cha<b>m</b>pion
                             </>
                         }
-                        description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+                        description="The age of Merdada is upon us. Bow to the warlord or get swept under her power on January 7th UTC!"
                         isComingSoon
                     />
                 </BentoTilt>
@@ -149,10 +149,10 @@ const Features = () => (
                         src="videos/feature-3.mp4"
                         title={
                             <>
-                                n<b>e</b>xus
+                                W<b>a</b>rwick Rew<b>o</b>rk
                             </>
                         }
-                        description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+                        description="Uncage the true wrath of Zaun with Warwick's new rework! Hitting the Rift on January 21st UTC!"
                         isComingSoon
                     />
                 </BentoTilt>
@@ -162,10 +162,10 @@ const Features = () => (
                         src="videos/feature-4.mp4"
                         title={
                             <>
-                                az<b>u</b>l
+                                vikt<b>o</b>r ch<b>a</b>mpion
                             </>
                         }
-                        description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+                        description="The progress of the arcane is inevitable. Become part of it on December 12th UTC!"
                         isComingSoon
                     />
                 </BentoTilt>
